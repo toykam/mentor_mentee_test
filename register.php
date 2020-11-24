@@ -1,6 +1,6 @@
 <?php require_once './config/includes/head.php'; ?>
 <?php if (isset($_GET['type'])) { ?>
-    <?php $type = $_GET['type']; ?>
+    <?php $type = $_GET['type']; echo $type; ?>
     <?php if ($type == 'mentor' || $type == 'mentee') { ?>
         <?php require_once __DIR__.'./pages/forms/register/index.php'; ?>
     <?php } else { ?>
